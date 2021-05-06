@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BelajarNgoding">
+        <activity android:name=".presentation.login.LoginActivity"></activity>
         <activity android:name=".presentation.splash.SplashActivity" />
         <activity android:name=".presentation.main.MainActivity">
             <intent-filter>
