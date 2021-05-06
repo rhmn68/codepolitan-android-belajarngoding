@@ -1,11 +1,15 @@
 <resources>
-    <string name="app_name">Belajar Ngoding</string>
-    <string name="login">Login</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="forgot_password">Forgot Password</string>
-    <string name="or">or</string>
-    <string name="register">Register</string>
+  <string name="app_name">Belajar Ngoding</string>
+  <string name="login">Login</string>
+  <string name="email">Email</string>
+  <string name="password">Password</string>
+  <string name="forgot_password">Forgot Password</string>
+  <string name="or">or</string>
+  <string name="register">Register</string>
   <string name="name">Name</string>
-    <string name="confirm_password">Confirm Password</string>
+  <string name="confirm_password">Confirm Password</string>
+  <string name="change_password">Change Password</string>
+  <string name="new_password">New Password</string>
+  <string name="old_password">Old Password</string>
+  <string name="confirm_new_password">Confirm New Password</string>
 </resources>
