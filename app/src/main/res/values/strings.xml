@@ -12,4 +12,9 @@
   <string name="new_password">New Password</string>
   <string name="old_password">Old Password</string>
   <string name="confirm_new_password">Confirm New Password</string>
+  <string name="welcome_home">Welcome Home,</string>
+  <string name="default_text">-</string>
+  <string name="tag_line">Panduan Belajar dasar-dasar JavaScript</string>
+  <string name="search">Search...</string>
+  <string name="your_materials">Your Materials</string>
 </resources>
