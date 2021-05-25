@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codepolitan.belajarngoding">
+  package="com.codepolitan.belajarngoding">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.BelajarNgoding">
-        <activity android:name=".presentation.changepassword.ChangePasswordActivity"></activity>
-        <activity android:name=".presentation.forgotpassword.ForgotPasswordActivity" />
-        <activity android:name=".presentation.register.RegisterActivity" />
-        <activity android:name=".presentation.login.LoginActivity" />
-        <activity android:name=".presentation.splash.SplashActivity" />
-        <activity android:name=".presentation.main.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.BelajarNgoding">
+    <activity android:name=".presentation.content.ContentActivity"></activity>
+    <activity android:name=".presentation.changepassword.ChangePasswordActivity" />
+    <activity android:name=".presentation.forgotpassword.ForgotPasswordActivity" />
+    <activity android:name=".presentation.register.RegisterActivity" />
+    <activity android:name=".presentation.login.LoginActivity" />
+    <activity android:name=".presentation.splash.SplashActivity" />
+    <activity android:name=".presentation.main.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
 
 </manifest>
