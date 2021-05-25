@@ -9,7 +9,8 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.BelajarNgoding">
-    <activity android:name=".presentation.content.ContentActivity"></activity>
+    <activity android:name=".presentation.user.UserActivity"></activity>
+    <activity android:name=".presentation.content.ContentActivity" />
     <activity android:name=".presentation.changepassword.ChangePasswordActivity" />
     <activity android:name=".presentation.forgotpassword.ForgotPasswordActivity" />
     <activity android:name=".presentation.register.RegisterActivity" />

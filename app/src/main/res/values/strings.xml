@@ -17,4 +17,7 @@
   <string name="tag_line">Panduan Belajar dasar-dasar JavaScript</string>
   <string name="search">Search...</string>
   <string name="your_materials">Your Materials</string>
+  <string name="logout">Logout</string>
+  <string name="change_language">Change Language</string>
+  <string name="change_password">Change Password</string>
 </resources>

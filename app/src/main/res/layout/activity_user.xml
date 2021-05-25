@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/swipe_user"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".presentation.user.UserActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:elevation="0dp"
+      android:background="@android:color/transparent">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/normal_100"
+        android:layout_marginEnd="@dimen/normal_100">
+
+        <ImageButton
+          android:id="@+id/btn_close_user"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:src="@drawable/ic_baseline_close_24"/>
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="User Profile"
+          android:textColor="@color/black"
+          android:fontFamily="sans-serif-medium"
+          android:layout_marginStart="@dimen/normal_100"/>
+
+      </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+          android:id="@+id/guideline_start"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintGuide_begin="@dimen/normal_100"/>
+
+        <androidx.constraintlayout.widget.Guideline
+          android:id="@+id/guideline_end"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintGuide_end="@dimen/normal_100"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/iv_avatar_user"
+          android:layout_width="@dimen/image_user_profile_large"
+          android:layout_height="@dimen/image_user_profile_large"
+          android:src="@android:color/darker_gray"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="@id/guideline_start"
+          app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+        <TextView
+          android:id="@+id/tv_name_user"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="@string/default_text"
+          tools:text="Aulia Rahman"
+          android:textAlignment="center"
+          android:textSize="@dimen/h5"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:layout_marginTop="@dimen/normal_125"
+          app:layout_constraintTop_toBottomOf="@id/iv_avatar_user"
+          app:layout_constraintStart_toStartOf="@id/guideline_start"
+          app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+        <TextView
+          android:id="@+id/tv_email_user"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="@string/default_text"
+          tools:text="aulia@codepolitan.com"
+          android:textAlignment="center"
+          android:textSize="@dimen/subtitle_1"
+          app:layout_constraintTop_toBottomOf="@id/tv_name_user"
+          app:layout_constraintStart_toStartOf="@id/guideline_start"
+          app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+        <Button
+          android:id="@+id/btn_logout_user"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="@string/logout"
+          android:textColor="@color/white"
+          android:background="@drawable/bg_btn_logout"
+          android:layout_marginBottom="@dimen/normal_100"
+          android:layout_marginStart="@dimen/small_50"
+          android:layout_marginEnd="@dimen/small_50"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="@id/guideline_start"
+          app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+        <Button
+          android:id="@+id/btn_change_language_user"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="@string/change_language"
+          android:textColor="@color/white"
+          android:background="@drawable/bg_btn_auth_color_primary"
+          android:layout_marginBottom="@dimen/normal_100"
+          android:layout_marginStart="@dimen/small_50"
+          android:layout_marginEnd="@dimen/small_50"
+          app:layout_constraintBottom_toTopOf="@id/btn_logout_user"
+          app:layout_constraintStart_toStartOf="@id/guideline_start"
+          app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+        <Button
+          android:id="@+id/btn_change_password_user"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="@string/change_password"
+          android:textColor="@color/white"
+          android:background="@drawable/bg_btn_auth_color_primary"
+          android:layout_marginBottom="@dimen/normal_100"
+          android:layout_marginStart="@dimen/small_50"
+          android:layout_marginEnd="@dimen/small_50"
+          app:layout_constraintBottom_toTopOf="@id/btn_change_language_user"
+          app:layout_constraintStart_toStartOf="@id/guideline_start"
+          app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+  </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
