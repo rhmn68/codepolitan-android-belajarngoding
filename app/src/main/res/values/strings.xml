@@ -20,4 +20,8 @@
   <string name="logout">Logout</string>
   <string name="change_language">Change Language</string>
   <string name="change_password">Change Password</string>
+  <string name="user_profile">User Profile</string>
+  <string name="error">Error</string>
+  <string name="success">Success</string>
+  <string name="please_wait">Please wait...</string>
 </resources>
