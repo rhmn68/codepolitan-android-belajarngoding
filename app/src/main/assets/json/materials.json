@@ -1,0 +1,22 @@
+[
+  {
+    "id_material": 0,
+    "title_material": "Pengenalan HTML dan CSS",
+    "thumbnail_material": "https://i.ibb.co/fCDbPcD/news-large-2.png"
+  },
+  {
+    "id_material": 1,
+    "title_material": "Dasar HTML dan CSS",
+    "thumbnail_material": "https://i.ibb.co/gWhdpxv/news-large-3.png"
+  },
+  {
+    "id_material": 2,
+    "title_material": "Membuat Layout Halaman Tanpa Table",
+    "thumbnail_material": "https://i.ibb.co/T10WL1h/news-large-4.png"
+  },
+  {
+    "id_material": 3,
+    "title_material": "Teknologi HTML dan CSS Terbaru",
+    "thumbnail_material": "https://i.ibb.co/x3JhvpT/news-large-5.png"
+  }
+]
