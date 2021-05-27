@@ -15,14 +15,14 @@
     <activity android:name=".presentation.forgotpassword.ForgotPasswordActivity" />
     <activity android:name=".presentation.register.RegisterActivity" />
     <activity android:name=".presentation.login.LoginActivity" />
-    <activity android:name=".presentation.splash.SplashActivity" />
-    <activity android:name=".presentation.main.MainActivity">
+    <activity android:name=".presentation.splash.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:name=".presentation.main.MainActivity"/>
   </application>
 
 </manifest>

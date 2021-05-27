@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.codepolitan.belajarngoding.R
 import com.codepolitan.belajarngoding.databinding.ActivityRegisterBinding
+import org.jetbrains.anko.toast
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -13,5 +14,19 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         registerBinding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(registerBinding.root)
+
+        onAction()
+    }
+
+    private fun onAction() {
+        registerBinding.apply {
+            btnCloseRegister.setOnClickListener {
+                finish()
+            }
+
+            btnRegister.setOnClickListener {
+                toast("Register Success")
+            }
+        }
     }
 }
