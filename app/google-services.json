@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195678674699",
+    "project_id": "belajar-ngoding-project",
+    "storage_bucket": "belajar-ngoding-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195678674699:android:d212405ce52085ef014c0e",
+        "android_client_info": {
+          "package_name": "com.codepolitan.belajarngoding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195678674699-ihqa75q6c0gtbs2crqtptf7kna9k5jjm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW3I3_ugyBtenAakFT30xLOZsSryzHecw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195678674699-ihqa75q6c0gtbs2crqtptf7kna9k5jjm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
