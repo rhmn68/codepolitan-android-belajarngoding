@@ -10,6 +10,7 @@ import androidx.core.widget.addTextChangedListener
 import com.codepolitan.belajarngoding.R
 import com.codepolitan.belajarngoding.adapter.MaterialsAdapter
 import com.codepolitan.belajarngoding.databinding.ActivityMainBinding
+import com.codepolitan.belajarngoding.presentation.content.ContentActivity
 import com.codepolitan.belajarngoding.presentation.user.UserActivity
 import com.codepolitan.belajarngoding.repository.Repository
 import com.codepolitan.belajarngoding.utils.showDialogLoading
@@ -17,6 +18,9 @@ import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
 
+  companion object{
+    const val EXTRA_POSITION = "extra_position"
+  }
   private lateinit var mainBinding: ActivityMainBinding
   private lateinit var materialsAdapter: MaterialsAdapter
 
@@ -30,6 +34,14 @@ class MainActivity : AppCompatActivity() {
 
     getDataMaterial()
     onAction()
+  }
+
+  override fun onResume() {
+    super.onResume()
+    if (intent != null){
+      val position = intent.getIntExtra(EXTRA_POSITION, 0)
+      mainBinding.rvMaterialsMain.smoothScrollToPosition(position)
+    }
   }
 
   private fun getDataMaterial() {
@@ -77,6 +89,13 @@ class MainActivity : AppCompatActivity() {
       swipeMain.setOnRefreshListener {
         getDataMaterial()
       }
+    }
+
+    materialsAdapter.onClick { material, position ->
+      startActivity<ContentActivity>(
+        ContentActivity.EXTRA_MATERIAL to material,
+        ContentActivity.EXTRA_POSITION to position
+      )
     }
   }
 }

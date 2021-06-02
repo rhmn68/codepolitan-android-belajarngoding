@@ -80,4 +80,8 @@ class MaterialsAdapter : RecyclerView.Adapter<MaterialsAdapter.ViewHolder>(), Fi
     override fun getItemCount(): Int = materialsFilter.size
 
     override fun getFilter(): Filter = filters
+
+    fun onClick(listener: ((Material, Int) -> Unit)){
+        this.listener = listener
+    }
 }

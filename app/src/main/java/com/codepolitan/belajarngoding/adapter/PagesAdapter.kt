@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 import com.codepolitan.belajarngoding.databinding.ItemPageBinding
 import com.codepolitan.belajarngoding.model.Page
+import com.codepolitan.belajarngoding.model.PartsPage
 
 class PagesAdapter(private val context: Context): PagerAdapter() {
 
@@ -29,8 +30,12 @@ class PagesAdapter(private val context: Context): PagerAdapter() {
     }
 
     private fun bindItem(pageBinding: ItemPageBinding, page: Page) {
+        val partsPageAdapter = PartsPageAdapter()
+
+        partsPageAdapter.partsPage = page.partsPage as MutableList<PartsPage>
+
         pageBinding.rvPages.setHasFixedSize(true)
-//        pageBinding.rvPages.adapter
+        pageBinding.rvPages.adapter = partsPageAdapter
     }
 
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) =
