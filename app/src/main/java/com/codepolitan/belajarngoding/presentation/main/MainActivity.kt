@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 
   private fun getDataMaterial() {
     showLoading()
+
     val materials = Repository.getMaterials(this)
 
     Handler(Looper.getMainLooper())
