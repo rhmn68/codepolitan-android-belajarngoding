@@ -23,4 +23,21 @@
   <string name="error">Error</string>
   <string name="success">Success</string>
   <string name="please_wait">Please wait...</string>
+  <string name="please_field_your_name">Please field your name</string>
+  <string name="please_field_your_confirm_password">Please field your confirm password</string>
+  <string name="please_field_your_password_more_than_8">Please field your password more than 8</string>
+  <string name="please_field_your_confirm_password_more_than_8">Please field your confirm password more than 8</string>
+  <string name="your_password_didnt_match">Your password did\'nt match</string>
+  <string name="please_field_your_old_password">Please field your old password</string>
+  <string name="please_input_your_old_password_more_than_8">Please input your old password more than 8</string>
+  <string name="please_field_your_new_password">Please field your new password</string>
+  <string name="please_input_your_new_password_more_than_8">Please input your new password more than 8</string>
+  <string name="please_field_your_confirm_new_password">Please field your confirm new password</string>
+  <string name="please_input_your_confirm_new_password_more_than_8">Please input your confirm new password more than 8</string>
+  <string name="success_change_pass">Congratulation, your password has been change</string>
+  <string name="success_register">Congratulation, your account has been register</string>
+  <string name="success_forgot_pass">Congratulation, your link reset password has been sent to your email, please check it!</string>
+  <string name="please_field_your_email">Please field your email</string>
+  <string name="please_use_valid_email">Please use valid email</string>
+  <string name="please_field_your_password">Please field your password</string>
 </resources>
