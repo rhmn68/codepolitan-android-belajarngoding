@@ -8,16 +8,21 @@ import com.codepolitan.belajarngoding.R
 import com.codepolitan.belajarngoding.databinding.ActivityUserBinding
 import com.codepolitan.belajarngoding.presentation.changepassword.ChangePasswordActivity
 import com.codepolitan.belajarngoding.presentation.login.LoginActivity
+import com.google.firebase.auth.FirebaseAuth
 import org.jetbrains.anko.startActivity
 
 class UserActivity : AppCompatActivity() {
 
     private lateinit var userBinding: ActivityUserBinding
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         userBinding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(userBinding.root)
+
+        //Init
+        firebaseAuth = FirebaseAuth.getInstance()
 
         onAction()
     }
@@ -35,6 +40,7 @@ class UserActivity : AppCompatActivity() {
             }
 
             btnLogoutUser.setOnClickListener {
+                firebaseAuth.signOut()
                 startActivity<LoginActivity>()
                 finishAffinity()
             }
